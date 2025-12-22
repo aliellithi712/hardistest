@@ -1,0 +1,4 @@
+mergeTargets:
+  - uat
+targetUsername: aliellithi@resilient-wolf-ekymok.com
+instanceUrl: https://resilient-wolf-ekymok-dev-ed.trailblaze.my.salesforce.com

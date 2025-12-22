@@ -1,0 +1,6 @@
+projectName: hardistest
+developmentBranch: integration
+autoCleanTypes:
+  - destructivechanges
+  - flowPositions
+  - minimizeProfiles
