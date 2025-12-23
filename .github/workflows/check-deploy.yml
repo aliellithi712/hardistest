@@ -6,6 +6,7 @@
 
 on:
   pull_request:
+    types: [opened, synchronize]
     # Add your major branches names here
     branches:
       - main
