@@ -4,6 +4,7 @@ installedApps:
 userEmail: aliellithi90@gmail.com
 localStorageBranchTargets:
   feature/exposeLwc: integration
+  fix/exposeRecordPage: integration
 sfdxPluginsStdout: |
   packaging 2.24.5
   sfdmu 4.38.0
