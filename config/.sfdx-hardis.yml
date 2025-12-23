@@ -4,3 +4,5 @@ autoCleanTypes:
   - destructivechanges
   - flowPositions
   - minimizeProfiles
+deploymentPlan:
+  packages: []
