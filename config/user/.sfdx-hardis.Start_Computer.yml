@@ -4,6 +4,7 @@ installedApps:
 userEmail: aliellithi90@gmail.com
 localStorageBranchTargets:
   feature/exposeLwc: integration
+  fix/exposeRecordPage: integration
 sfdxPluginsStdout: |
   packaging 2.24.5
   sfdmu 4.38.0
@@ -19,3 +20,5 @@ sfdxPluginsStdout: |
   flow 1.0.5
   signups 2.6.56
   @salesforce/sfdx-plugin-lwc-test 1.2.1
+mergeRequests:
+  - branch: fix/exposeRecordPage
