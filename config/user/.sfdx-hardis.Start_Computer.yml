@@ -20,3 +20,6 @@ sfdxPluginsStdout: |
   flow 1.0.5
   signups 2.6.56
   @salesforce/sfdx-plugin-lwc-test 1.2.1
+mergeRequests:
+  - branch: fix/exposeRecordPage
+    urlCreate: https://github.com/aliellithi712/hardistest/pull/new/fix/exposeRecordPage
