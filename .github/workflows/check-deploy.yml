@@ -9,7 +9,7 @@ on:
     types: [opened, synchronize, reopened] # triggers before merge
     # Add your major branches names here
     branches:
-      - '*'
+      - '*' # all branches
 permissions: read-all
 name: Simulate Deployment (sfdx-hardis)
 
