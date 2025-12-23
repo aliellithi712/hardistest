@@ -9,10 +9,7 @@ on:
     types: [opened, synchronize]
     # Add your major branches names here
     branches:
-      - main
-      - preprod
-      - uat
-      - integration
+      - '*' # all branches
 permissions: read-all
 name: Simulate Deployment (sfdx-hardis)
 
