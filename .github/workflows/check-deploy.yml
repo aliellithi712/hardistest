@@ -77,4 +77,4 @@ jobs:
         run: |
           echo "Simulate SFDX deployment using Hardis against \"$CONFIG_BRANCH\""
           sf hardis:auth:login
-          $ sf hardis:project:deploy:smart --check --testlevel NoTestRun
+          sf hardis:project:deploy:smart --check --testlevel RunRepositoryTests
