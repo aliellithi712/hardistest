@@ -6,7 +6,7 @@
 
 on:
   pull_request:
-    types: [opened, synchronize]
+    types: [opened, synchronize, reopened]
     # Add your major branches names here
     branches:
       - '*' # all branches
