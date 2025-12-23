@@ -6,15 +6,8 @@
 
 on:
   pull_request:
-<<<<<<< HEAD
     types: [opened, synchronize, reopened, ready_for_review]
     # Add your major branches names here
-=======
-    types: [opened, synchronize, reopened]
-    # Add your major branches names here
-    branches:
-      - '*' # all branches
->>>>>>> 8eb5bbb011920d9e02b6d2ba397242e2b07011db
 permissions: read-all
 name: Simulate Deployment (sfdx-hardis)
 
