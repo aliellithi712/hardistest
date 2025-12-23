@@ -6,7 +6,7 @@
 
 on:
   pull_request:
-    types: [opened, synchronize, reopened] # triggers before merge
+    types: [opened, synchronize, reopened]
     # Add your major branches names here
     branches:
       - '*' # all branches
