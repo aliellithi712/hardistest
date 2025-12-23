@@ -6,10 +6,8 @@
 
 on:
   pull_request:
-    types: [opened, synchronize, reopened] # triggers before merge
+    types: [opened, synchronize, reopened, ready_for_review]
     # Add your major branches names here
-    branches:
-      - '*'
 permissions: read-all
 name: Simulate Deployment (sfdx-hardis)
 
