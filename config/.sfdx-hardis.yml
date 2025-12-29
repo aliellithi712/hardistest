@@ -1,0 +1,20 @@
+projectName: hardistest
+developmentBranch: integration
+autoCleanTypes:
+  - destructivechanges
+  - flowPositions
+  - minimizeProfiles
+deploymentPlan:
+  packages: []
+apexTestsMinCoverageOrgWide: 75
+devHubAlias: ''
+devHubInstanceUrl: https://login.salesforce.com
+devHubUsername: ''
+installPackagesDuringCheckDeploy: false
+manualActionsFileUrl: ''
+newTaskNameRegex: ''
+newTaskNameRegexExample: ''
+sharedDevSandboxes: false
+useDeltaDeployment: false
+useDeltaDeploymentWithDependencies: false
+useSmartDeploymentTests: true
