@@ -80,4 +80,4 @@ jobs:
         run: |
           echo "Process SFDX deployment using Hardis against \"$CONFIG_BRANCH\""
           sf hardis:auth:login
-          sf hardis:project:deploy:smart --check --test-level NoTestRun
+          sf hardis:project:deploy:smart --check --testlevel NoTestRun
