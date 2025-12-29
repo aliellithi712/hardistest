@@ -3,27 +3,20 @@
 # - variables for additional branches: add SFDX_CLIENT_ID / KEY variables
 # - To use slack notifications, you can also define SLACK_TOKEN and SLACK_CHANNEL_ID
 #   - For branch scoped messages, add SLACK_CHANNEL_ID_ + branch name (ex: SLACK_CHANNEL_ID_INTEGRATION, SLACK_CHANNEL_ID_UAT)
-name: Process Deployment (sfdx-hardis)
 on:
-  # push:
-  #   # Add your major branches names here
-  #   branches:
-  #     - main
-  #     - preprod
-  #     - uat
-  #     - integration
-  workflow_dispatch:
-    inputs:
-      is_check_only:
-        description: 'Check only? (Validation mode)'
-        required: true
-        type: boolean
+  push:
+    # Add your major branches names here
+    branches:
+      - main
+      - preprod
+      - uat
+      - integration
 
+name: Process Deployment (sfdx-hardis)
 permissions: read-all
 concurrency:
   group: ${{ github.ref }}-${{ github.workflow }}
   cancel-in-progress: true
-
 
 jobs:
   process_deployment:
@@ -87,10 +80,4 @@ jobs:
         run: |
           echo "Process SFDX deployment using Hardis against \"$CONFIG_BRANCH\""
           sf hardis:auth:login
-          if [[ "${{ github.event.inputs.is_check_only }}" == "false" ]]; then
-            echo "Running ACTUAL Deployment"
-            sf hardis:project:deploy:smart --testlevel NoTestRun
-          else
-            echo "Running CHECK only"
-            sf hardis:project:deploy:smart --check --testlevel NoTestRun
-          fi
+          sf hardis:project:deploy:smart --testlevel NoTestRun
