@@ -1,0 +1,24 @@
+installedApps:
+  - openssl
+  - git
+userEmail: aliellithi90@gmail.com
+localStorageBranchTargets:
+  feature/exposeLwc: integration
+  fix/exposeRecordPage: integration
+sfdxPluginsStdout: |
+  packaging 2.24.5
+  sfdmu 4.38.0
+  sfdx-git-delta 6.24.0
+  sfdx-hardis 6.17.1
+
+  Uninstalled JIT Plugins:
+  code-analyzer 5.7.1
+  community 3.3.48
+  custom-metadata 3.3.72
+  dev 2.5.1
+  devops-center 1.2.27
+  flow 1.0.5
+  signups 2.6.56
+  @salesforce/sfdx-plugin-lwc-test 1.2.1
+mergeRequests:
+  - branch: fix/exposeRecordPage
